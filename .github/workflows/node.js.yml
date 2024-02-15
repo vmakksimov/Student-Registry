@@ -8,6 +8,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
 
 
 jobs:
@@ -33,4 +34,3 @@ jobs:
     - name: Run Tests
       run: npm run test
 
-      
