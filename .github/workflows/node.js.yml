@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ "main" ]
 
-    
+
 jobs:
   build:
 
@@ -30,4 +30,6 @@ jobs:
         cache: 'npm'
     - name: Build app
       run: npm install
+    - name: Run Tests
+      run: npm run test
 
